@@ -4,5 +4,5 @@ resource "azurerm_log_analytics_workspace" "log_analytics_workspace" {
   resource_group_name = var.resource_group
   sku                 = var.log_analytics_sku
   retention_in_days   = var.log_analytics_retention_period
-  tags = var.common_tags
+  tags                = var.common_tags
 }
