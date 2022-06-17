@@ -4,12 +4,6 @@ variable "location" {
   default     = "UK South"
 }
 
-variable "common_tags" {
-  description = "Common tag to be applied to resources"
-  type        = map(string)
-  default     = {}
-}
-
 variable "log_analytics_retention_period" {
   description = "Log Analytics retention period in days."
   type        = number

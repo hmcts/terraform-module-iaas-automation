@@ -1,17 +1,25 @@
-variable "resource_group_name" {
-  description = "Enter Resource Group name."
+variable "product" {
+  description = "Enter product name."
   type        = string
   default     = null
 }
-
-variable "automation_account_name" {
-  description = "Enter automation account name."
+variable "application" {
+  description = "Enter application name."
   type        = string
   default     = null
 }
-
-variable "log_analytics_name" {
-  description = "Enter log analytics instance name."
+variable "common_tags" {
+  description = "Common tag to be applied to resources."
+  type        = map(string)
+  default     = {}
+}
+variable "environment" {
+  description = "Enter environment."
+  type        = string
+  default     = null
+}
+variable "resource_group" {
+  description = "Enter resource_group name."
   type        = string
   default     = null
 }
